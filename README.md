@@ -3,8 +3,8 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
 
 ## Table of Contents
 * [Example Dataset](#example-dataset)
-* [To-Do List](#to\-do-list)
 * [Implementing PCA](#implementing-pca)
+* [To-Do List](#to\-do-list)
 
 ## Example Dataset
 To understand how PCA works, we start first start with a 2D dataset which which has
