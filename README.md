@@ -9,7 +9,11 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
 ## Example Dataset
 To understand how PCA works, we start first start with a 2D dataset which which has
 one direction of large variation and one of smaller variation. The script file **tests/ExampleDataset.m**
-will plot the training data (*Figure to be added later*). We will visualize what happen when we use
+will plot the training data 
+
+![Example Dataset 1](figures/figure1.jpg)
+
+We will visualize what happen when we use
 PCA to reduce the data from 2D to 1D. In practice. we want
 to reduce data from say 256 to 50 dimensions; however, using lower dimensional data makes it easier 
 for us to visualize the algorithms.
@@ -48,8 +52,8 @@ found, and has an expected output of
 and *-U<sub>1</sub>* are equally valid choices for the first principal component.)
 
 ## To-Do List
-- [ ] implement tests/ExampleDataset.m
-- [ ] create figure for Example Dataset
+- [X] implement tests/ExampleDataset.m
+- [X] create figure for Example Dataset
 - [ ] implement PCA
   - [ ] implement src/featureNormalize.m
   - [ ] implement src/pca.m
