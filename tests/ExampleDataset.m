@@ -18,4 +18,4 @@ plot(X(:, 1), X(:, 2), 'bo');
 % @param "square" specifies a square aspect ratio
 axis([0.5, 6.5, 2, 8], "square");
 
-print -djpg ../figures/figure1.jpg
+% print -djpg ../figures/figure1.jpg
