@@ -55,8 +55,8 @@ and *-U<sub>1</sub>* are equally valid choices for the first principal component
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
 - [X] create figure for Example Dataset
-- [ ] implement PCA
+- [X] implement PCA
   - [X] implement src/featureNormalize.m
   - [X] implement src/pca.m
-  - [ ] implement tests/PCA.m
+  - [X] implement tests/PCA.m
   - [X] create figure for PCA
