@@ -16,3 +16,5 @@ hold on;
 drawLine(mu, mu + S(1,1) * U(:,1)', '-k', 'LineWidth', 2);
 drawLine(mu, mu + S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
 hold off;
+
+% print -djpg ../figures/figure2.jpg
