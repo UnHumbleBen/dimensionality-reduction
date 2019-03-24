@@ -1,10 +1,5 @@
-%% Initialization
-clear ; close all; clc
-
+ExampleDataset
 addpath("../src");
-
-%% Loads Example Dataset 1 and stores it as X
-load('../data/example-dataset1.mat');
 
 fprintf('\nRunning PCA on example dataset.\n\n');
 
@@ -13,3 +8,11 @@ fprintf('\nRunning PCA on example dataset.\n\n');
 
 %% Run PCA
 [U, S] = pca(X_norm);
+
+%% Draw the eigenvectors centered at mean of
+%% dataset. The lines show the directions of
+%% maximum variations in the dataset.
+hold on;
+drawLine(mu, mu + S(1,1) * U(:,1)', '-k', 'LineWidth', 2);
+drawLine(mu, mu + S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
+hold off;
