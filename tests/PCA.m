@@ -10,3 +10,6 @@ fprintf('\nRunning PCA on example dataset.\n\n');
 
 %% normalize X
 [X_norm, mu, sigma] = featureNormalize(X);
+
+%% Run PCA
+[U, S] = pca(X_norm);
