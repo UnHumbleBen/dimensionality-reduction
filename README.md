@@ -4,6 +4,10 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
 ## Table of Contents
 * [Example Dataset](#example-dataset)
 * [Implementing PCA](#implementing-pca)
+* [Dimensionality Reduction](#dimensionality-reduction)
+  * [Projecting the data onto the principal components](#projecting-the-data-onto-the-principal-components)
+  * [Reconstructing an approximation of the data](#reconstructing-an-approximation-of-the-data)
+  * [Visualizing the projections](#visualizing-the-projections)
 * [To-Do List](#to\-do-list)
 
 ## Example Dataset
@@ -52,6 +56,25 @@ found, and has an expected output of
 (It is possible that Octave may instead output of negative of this, since *U<sub>1</sub>*
 and *-U<sub>1</sub>* are equally valid choices for the first principal component.)
 
+## Dimensionality Reduction
+After computing the principal components, we can use them to reduce the feature 
+dimension of our dataset by projecting each example onto a lower dimensional space,
+*x<sup>(i)</sup> -> z<sup>(i)</sup>*. 
+In practice, the projected data could be used instead of the original data 
+for a learning algorithm. 
+
+### Projecting the data onto the principal components
+The function in **src/projectData.m** returns new dataset given a dataset *X*,
+the principal components *U*, and the desired number dimensions to reduce to *K*.
+
+### Reconstructing an approximation of the data
+The function in **src/recoverData.m** projects each example in *Z* back onto the original
+space and returns the recovered approximation.
+
+### Visualizing the projections
+The script in **tests/visualizeProjection.m** shows how the projection affects the data.
+(Figure to be added later)
+
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
 - [X] create figure for Example Dataset
@@ -60,3 +83,8 @@ and *-U<sub>1</sub>* are equally valid choices for the first principal component
   - [X] implement src/pca.m
   - [X] implement tests/PCA.m
   - [X] create figure for PCA
+- [ ] implement dimensionality reduction
+  - [ ] project data onto principal components
+  - [ ] reconstruct data 
+  - [ ] visualization of the projection
+  - [ ] add figure for projection visualization
