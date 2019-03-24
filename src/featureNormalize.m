@@ -10,4 +10,8 @@ mu = mean(X);
 % applies element-wise subtraction between X and mu
 X_norm = bsxfun(@minus, X, mu);
 
+% applies element-wise division of sigma to X_norm
+sigma = std(X_norm);
+X_norm = bsxfun(@rdivide, X_norm, sigma);
+
 end
