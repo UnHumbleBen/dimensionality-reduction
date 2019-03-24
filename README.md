@@ -40,7 +40,8 @@ In Octave, SVD runs from the following command:
 [U, S, V] = svd(Sigma)
 ```
 where *U* will contain the principal components and *S* will contain a diagonal matrix.
-(*Figure of computed eigenvectors of the data set to be added later*)
+
+![Computed eigenvectors on the dataset](figures/figure2.jpg)
 
 **tests/PCA.m** runs PCA on the example dataset and plot the corresponding principal components
 (*see figure above*). This script also outputs the top principal component (eigenvectors)
@@ -55,7 +56,7 @@ and *-U<sub>1</sub>* are equally valid choices for the first principal component
 - [X] implement tests/ExampleDataset.m
 - [X] create figure for Example Dataset
 - [ ] implement PCA
-  - [ ] implement src/featureNormalize.m
-  - [ ] implement src/pca.m
+  - [X] implement src/featureNormalize.m
+  - [X] implement src/pca.m
   - [ ] implement tests/PCA.m
-  - [ ] create figure for PCA
+  - [X] create figure for PCA
