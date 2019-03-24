@@ -18,3 +18,6 @@ drawLine(mu, mu + S(2,2) * U(:,2)', '-k', 'LineWidth', 2);
 hold off;
 
 % print -djpg ../figures/figure2.jpg
+
+fprintf('Top eigenvector: \n');
+fprintf(' U(:1) = %f %f \n', U(1,1), U(2,1));
