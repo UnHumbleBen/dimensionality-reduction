@@ -10,6 +10,7 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
   * [Visualizing the projections](#visualizing-the-projections)
 * [Face Image Dataset](#face-image-dataset)
   * [PCA on Faces](#pca-on-faces)
+  * [Dimensionality Reduction](#dimensionality-reduction)
 * [To-Do List](#to\-do-list)
 
 ## Example Dataset
@@ -89,6 +90,8 @@ each 32 x 32 in grayscale. Each row of *X* corresponds to one face image (a row 
 The script in **tests/pcaFaces.m** will normalize the data matrix *X* and store the principal component
 in *U*. It will then display the first 36 principal components that describes the largest variations.
 (Figure of principal components to be added later)
+
+### Dimensionality Reduction
 We then project the face dataset using just the first 100 prinicpal components. When we recover the dataset
 we can compare the data side by side
 (Figure of side by side data comparision to be added later)
