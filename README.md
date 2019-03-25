@@ -89,7 +89,7 @@ each 32 x 32 in grayscale. Each row of *X* corresponds to one face image (a row 
 ### PCA on Faces
 The script in **tests/pcaFaces.m** will normalize the data matrix *X* and store the principal component
 in *U*. It will then display the first 36 principal components that describes the largest variations.
-(Figure of principal components to be added later)
+![Principal faces](figures/figure5.jpg)
 
 ### Dimensionality Reduction on Faces
 We then project the face dataset using just the first 100 prinicpal components. When we recover the dataset
@@ -113,5 +113,5 @@ we can compare the data side by side
   - [X] add data/faces.mat
   - [X] add figure for face data
   - [ ] implement tests/pcaFaces.m
-  - [ ] add figure for principal components on the face
+  - [X] add figure for principal components on the face
   - [ ] add figure for side by side data comparison
