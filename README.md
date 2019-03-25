@@ -77,6 +77,12 @@ The script in **tests/visualizeProjection.m** shows how the projection affects t
 The red circles indicate the projected data points and the dotted lines connect the original,
 normalized dataset to the projected ones.
 
+## Face Image Dataset
+We now apply PCA to a real data set. **data/faces.mat** contains a dataset *X* of face images,
+each 32 x 32 in grayscale. Each row of *X* corresponds to one face image (a row vector of length
+32 x 32 = 1024). 
+(Figure of first 100 face images to be added later)
+
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
 - [X] create figure for Example Dataset
