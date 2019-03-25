@@ -8,6 +8,7 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
   * [Projecting the data onto the principal components](#projecting-the-data-onto-the-principal-components)
   * [Reconstructing an approximation of the data](#reconstructing-an-approximation-of-the-data)
   * [Visualizing the projections](#visualizing-the-projections)
+* [PCA on Faces](PCA-on-Faces)
 * [To-Do List](#to\-do-list)
 
 ## Example Dataset
