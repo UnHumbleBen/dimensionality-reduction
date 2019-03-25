@@ -27,4 +27,4 @@ fprintf(["\nRunning PCA on face dataset.\n" ...
 %   Display the top 36 eigenvectors found
 displayData(U(:, 1:36)');
 
-print -djpg ../figures/figure5.jpg
+% print -djpg ../figures/figure5.jpg
