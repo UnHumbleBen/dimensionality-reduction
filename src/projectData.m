@@ -7,4 +7,6 @@ function Z = projectData(X, U, K)
 %   projected examples in Z.
 %
 
+Z = X * U(:, k);
+
 end
