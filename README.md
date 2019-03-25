@@ -94,7 +94,7 @@ in *U*. It will then display the first 36 principal components that describes th
 ### Dimensionality Reduction on Faces
 We then project the face dataset using just the first 100 prinicpal components. When we recover the dataset
 we can compare the data side by side
-(Figure of side by side data comparision to be added later)
+![Data comparision](figures/figure6.jpg)
 
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
@@ -109,9 +109,9 @@ we can compare the data side by side
   - [X] reconstruct data 
   - [X] visualization of the projection
   - [X] add figure for projection visualization
-- [ ] PCA on Faces
+- [X] PCA on Faces
   - [X] add data/faces.mat
   - [X] add figure for face data
-  - [ ] implement tests/pcaFaces.m
+  - [X] implement tests/pcaFaces.m
   - [X] add figure for principal components on the face
-  - [ ] add figure for side by side data comparison
+  - [X] add figure for side by side data comparison
