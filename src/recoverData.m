@@ -4,5 +4,5 @@ function X_rec = recoverData(Z, U, K)
 %   X_rec = RECOVERDATA(Z, U, K) recovers an approximation of the
 %   original data that has been reduced to K dimensions. It returns
 %   the approixmate reconstruction in X_rec.
-
+X_rec = Z * U(:, K)';
 end
