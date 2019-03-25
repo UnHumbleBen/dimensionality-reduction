@@ -107,7 +107,7 @@ we can compare the data side by side
   - [X] visualization of the projection
   - [X] add figure for projection visualization
 - [ ] PCA on Faces
-  - [ ] add data/faces.mat
+  - [X] add data/faces.mat
   - [ ] add figure for face data
   - [ ] implement tests/pcaFaces.m
   - [ ] add figure for principal components on the face
