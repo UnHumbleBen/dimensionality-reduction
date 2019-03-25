@@ -73,7 +73,9 @@ space and returns the recovered approximation.
 
 ### Visualizing the projections
 The script in **tests/visualizeProjection.m** shows how the projection affects the data.
-(Figure to be added later)
+![Projections](figures/figure3.jpg)
+The red circles indicate the projected data points and the dotted lines connect the original,
+normalized dataset to the projected ones.
 
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
@@ -83,8 +85,8 @@ The script in **tests/visualizeProjection.m** shows how the projection affects t
   - [X] implement src/pca.m
   - [X] implement tests/PCA.m
   - [X] create figure for PCA
-- [ ] implement dimensionality reduction
-  - [ ] project data onto principal components
-  - [ ] reconstruct data 
-  - [ ] visualization of the projection
-  - [ ] add figure for projection visualization
+- [X] implement dimensionality reduction
+  - [X] project data onto principal components
+  - [X] reconstruct data 
+  - [X] visualization of the projection
+  - [X] add figure for projection visualization
