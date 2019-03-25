@@ -82,8 +82,8 @@ normalized dataset to the projected ones.
 ## Face Image Dataset
 We now apply PCA to a real data set. **data/faces.mat** contains a dataset *X* of face images,
 each 32 x 32 in grayscale. Each row of *X* corresponds to one face image (a row vector of length
-32 x 32 = 1024). 
-(Figure of first 100 face images to be added later)
+32 x 32 = 1024). (drawn below)
+![Face dataset](figures/figure4.jpg)
 
 ### PCA on Faces
 The script in **tests/pcaFaces.m** will normalize the data matrix *X* and store the principal component
@@ -108,7 +108,7 @@ we can compare the data side by side
   - [X] add figure for projection visualization
 - [ ] PCA on Faces
   - [X] add data/faces.mat
-  - [ ] add figure for face data
+  - [X] add figure for face data
   - [ ] implement tests/pcaFaces.m
   - [ ] add figure for principal components on the face
   - [ ] add figure for side by side data comparison
