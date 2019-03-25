@@ -37,3 +37,27 @@ Z = projectData(X_norm, U, K);
 
 fprintf("The projected data Z has a size of: ");
 fprintf("%d by %d \n", size(Z));
+
+%% Visualization of Faces after PCA Dimension
+
+fprintf("\nVisualizing the projected faces.\n\n");
+
+K = 100;
+X_rec = recoverData(Z, U, K);
+
+% Display normalized data
+% plot on a 1 by 2 subwindow in index 1
+subplot(1, 2, 1);
+% plot the first 100 faces
+displayData(X_norm(1:100, :));
+title("Original faces");
+axis("square");
+
+% plot on a 1 by 2 subwindow in index 2
+subplot(1, 2, 2);
+% plot the first 100 faces
+displayData(X_rec(1:100, :));
+title("Recovered faces");
+axis("square");
+
+% print -djpg ../figures/figure6.jpg
