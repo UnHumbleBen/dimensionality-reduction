@@ -8,4 +8,6 @@ fprintf("\nLoading facedataset.\n\n");
 load("../data/faces.mat");
 
 % Display the first 100 faces in the dataset
-% displayData(X(1:100, :));
+displayData(X(1:100, :));
+
+% print -djpg ../figures/figure4.jpg
