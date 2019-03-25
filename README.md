@@ -8,6 +8,8 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
   * [Projecting the data onto the principal components](#projecting-the-data-onto-the-principal-components)
   * [Reconstructing an approximation of the data](#reconstructing-an-approximation-of-the-data)
   * [Visualizing the projections](#visualizing-the-projections)
+* [Face Image Dataset](#face-image-dataset)
+  * [PCA on Faces](#pca-on-faces)
 * [To-Do List](#to\-do-list)
 
 ## Example Dataset
@@ -73,7 +75,23 @@ space and returns the recovered approximation.
 
 ### Visualizing the projections
 The script in **tests/visualizeProjection.m** shows how the projection affects the data.
-(Figure to be added later)
+![Projections](figures/figure3.jpg)
+The red circles indicate the projected data points and the dotted lines connect the original,
+normalized dataset to the projected ones.
+
+## Face Image Dataset
+We now apply PCA to a real data set. **data/faces.mat** contains a dataset *X* of face images,
+each 32 x 32 in grayscale. Each row of *X* corresponds to one face image (a row vector of length
+32 x 32 = 1024). 
+(Figure of first 100 face images to be added later)
+
+### PCA on Faces
+The script in **tests/pcaFaces.m** will normalize the data matrix *X* and store the principal component
+in *U*. It will then display the first 36 principal components that describes the largest variations.
+(Figure of principal components to be added later)
+We then project the face dataset using just the first 100 prinicpal components. When we recover the dataset
+we can compare the data side by side
+(Figure of side by side data comparision to be added later)
 
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
@@ -83,8 +101,14 @@ The script in **tests/visualizeProjection.m** shows how the projection affects t
   - [X] implement src/pca.m
   - [X] implement tests/PCA.m
   - [X] create figure for PCA
-- [ ] implement dimensionality reduction
-  - [ ] project data onto principal components
-  - [ ] reconstruct data 
-  - [ ] visualization of the projection
-  - [ ] add figure for projection visualization
+- [X] implement dimensionality reduction
+  - [X] project data onto principal components
+  - [X] reconstruct data 
+  - [X] visualization of the projection
+  - [X] add figure for projection visualization
+- [ ] PCA on Faces
+  - [ ] add data/faces.mat
+  - [ ] add figure for face data
+  - [ ] implement tests/pcaFaces.m
+  - [ ] add figure for principal components on the face
+  - [ ] add figure for side by side data comparison
