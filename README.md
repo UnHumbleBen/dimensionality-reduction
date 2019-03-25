@@ -96,6 +96,15 @@ We then project the face dataset using just the first 100 prinicpal components. 
 we can compare the data side by side
 ![Data comparision](figures/figure6.jpg)
 
+## PCA for visualization
+Visualizing datasets in 3 dimensions or greater can be cumbersome. Therefore, we would want to display
+the data in 2D even at the cost of losing some information. In practice, PCA can reduce the dimensionality
+of data for visualization purposes. The script in **tests/pcaVisualization.m** will aply PCA to
+a 3-dimensional data to reduce it to 2 dimensions and visualize the result in a 2D scatter plot. It
+can be thought of as a rotation that selects the best view that maximizes the spread of the data.
+(Figure of data in 3D to be added later)
+(Figure of data in 2D to be added later)
+
 ## To-Do List
 - [X] implement tests/ExampleDataset.m
 - [X] create figure for Example Dataset
@@ -115,3 +124,7 @@ we can compare the data side by side
   - [X] implement tests/pcaFaces.m
   - [X] add figure for principal components on the face
   - [X] add figure for side by side data comparison
+- [ ] PCA for visualization
+  - [ ] add 3D data plot
+  - [ ] implement tests/pcaVisualization.m
+  - [ ] add 2D data plot
