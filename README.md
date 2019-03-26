@@ -11,6 +11,7 @@ We use principal component analysis (PCA) to perform dimensionality reduction.
 * [Face Image Dataset](#face-image-dataset)
   * [PCA on Faces](#pca-on-faces)
   * [Dimensionality Reduction on Faces](#dimensionality-reduction-on-faces)
+* [PCA for visualization](#pca-for-visualization)
 * [To-Do List](#to\-do-list)
 
 ## Example Dataset
