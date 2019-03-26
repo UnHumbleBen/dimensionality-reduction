@@ -2,7 +2,9 @@
 clear; close all; clc;
 
 %%Import K means sources
-addpath("../../image-compression/src")
+addpath("../../image-compression/src");
+%%Import PCA sources
+addpath("../src");
 
 %%Read image
 A = double(imread('../images/bird_small.png'));
@@ -38,3 +40,20 @@ title("Pixel dataset plotted in 3D. Color shows centroid memberships");
 % save figure
 % print -djpg ../figures/figure7.jpg
 
+%%Now, apply PCA to reduce the data
+% normalize
+[X_norm, mu, sigma] = featureNormalize(X);
+
+% run pca
+[U, S] = pca(X_norm);
+
+% get new dataset Z to 2D
+Z = projectData(X_norm, U, 2);
+
+% create a 2D figure
+figure;
+scatter(Z(sel, 1), Z(sel, 2), 15, colors);
+title("Pixel dataset plotted in 2D, using PCA for dimensionality reduction");
+
+% save figure
+% print -djpg ../figures/figure8.jpg
