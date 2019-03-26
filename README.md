@@ -102,7 +102,7 @@ the data in 2D even at the cost of losing some information. In practice, PCA can
 of data for visualization purposes. The script in **tests/pcaVisualization.m** will aply PCA to
 a 3-dimensional data to reduce it to 2 dimensions and visualize the result in a 2D scatter plot. It
 can be thought of as a rotation that selects the best view that maximizes the spread of the data.
-![3D Representation of clusters](figures/figures7.jpg)
+![3D Representation of clusters](figures/figure7.jpg)
 (Figure of data in 2D to be added later)
 
 ## To-Do List
