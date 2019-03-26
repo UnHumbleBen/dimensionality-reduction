@@ -52,7 +52,7 @@ Z = projectData(X_norm, U, 2);
 
 % create a 2D figure
 figure;
-scatter(Z(sel, 1), Z(sel, 2), 15, colors);
+scatter(Z(sel, 1), Z(sel, 2), 10, colors);
 title("Pixel dataset plotted in 2D, using PCA for dimensionality reduction");
 
 % save figure
